@@ -13,6 +13,7 @@ class EnvType(Enum):
 class Settings(BaseSettings):
     ENVIRONMENT: str
     APP_NAME: str
+    API_KEY: str
 
     @field_validator("ENVIRONMENT")
     def validate_environment(cls, value):
